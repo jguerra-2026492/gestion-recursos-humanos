@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="551.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.netjags.recursoshumanos.controller.LoginController">
+   <children>
+      <BorderPane layoutX="-1.0" layoutY="-3.0" prefHeight="558.0" prefWidth="777.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="551.0" prefWidth="778.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="287.0" layoutY="134.0" text="Iniciar Sesion en Gestion de Aplicantes" />
+                  <Label layoutX="340.0" layoutY="210.0" text="Correo electrónico" />
+                  <Label layoutX="359.0" layoutY="267.0" text="Contraseña" />
+                  <TextField fx:id="txtFieldEmail" layoutX="211.0" layoutY="233.0" prefHeight="25.0" prefWidth="355.0"  />
+                  <PasswordField fx:id="fieldPassword" layoutX="210.0" layoutY="293.0" prefHeight="25.0" prefWidth="358.0" />
+                  <Button layoutX="306.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="25.0" prefWidth="166.0" text="Iniciar sesión" />
+                  <Label layoutX="246.0" layoutY="399.0" text="¿No posee una cuenta? Contacte a TI o" />
+                  <Hyperlink layoutX="459.0" layoutY="396.0" onAction="#handleReturnToRegistryView" text="Registrese" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

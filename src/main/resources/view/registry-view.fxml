@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/21.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.netjags.recursoshumanos.controller.RegistryController">
+   <children>
+      <BorderPane layoutX="-1.0" layoutY="-3.0" prefHeight="558.0" prefWidth="777.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <Pane prefHeight="579.0" prefWidth="275.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="355.0" layoutY="64.0" text="Crear cuenta" />
+                  <Label layoutX="367.0" layoutY="99.0" text="Nombre" />
+                  <Label layoutX="367.0" layoutY="152.0" text="Apellido" />
+                  <TextField fx:id="firstNameField" layoutX="182.0" layoutY="116.0" prefHeight="25.0" prefWidth="407.0" />
+                  <Button layoutX="306.0" layoutY="368.0" mnemonicParsing="false" onAction="#handleContinue" prefHeight="25.0" prefWidth="166.0" text="Continuar" />
+                  <TextField fx:id="lastNameField" layoutX="183.0" layoutY="169.0" prefHeight="25.0" prefWidth="407.0" />
+                  <Label layoutX="340.0" layoutY="206.0" text="Correo electrónico" />
+                  <Label layoutX="359.0" layoutY="259.0" text="Contraseña" />
+                  <Label layoutX="332.0" layoutY="302.0" text="Confirmar contraseña" />
+                  <TextField fx:id="emailField" layoutX="182.0" layoutY="223.0" prefHeight="26.0" prefWidth="413.0" />
+                  <PasswordField fx:id="passwordField" layoutX="182.0" layoutY="276.0" prefHeight="26.0" prefWidth="410.0" />
+                  <PasswordField fx:id="confirmpasswordField" layoutX="181.0" layoutY="319.0" prefHeight="26.0" prefWidth="411.0" />
+                  <Label layoutX="300.0" layoutY="412.0" text="¿Ya tienes cuenta?" />
+                  <Hyperlink layoutX="401.0" layoutY="409.0" onAction="#handleReturnToLogin" text="Inicia Sesión" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
